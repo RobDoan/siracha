@@ -1,5 +1,11 @@
 module Siracha
   class AppBuilder < ::Rails::AppBuilder
+
+    def app
+      before_build_app
+      super
+    end
+
     def leftovers
       configure_generators
       set_ruby_to_version_being_used
@@ -8,11 +14,17 @@ module Siracha
       end
     end
 
+
     def load_file_root
       File.expand_path("../steps/", File.dirname(__FILE__))
     end
 
     private
+
+    def before_build_app
+      apply File.join(__dir__, 'before_build.rb')
+    end
+
     def configure_generators
       config = <<-RUBY
         config.generators do |generate|
@@ -32,5 +44,6 @@ module Siracha
     def set_ruby_to_version_being_used
       create_file '.ruby-version', "#{Siracha::RUBY_VERSION}\n"
     end
+
   end
 end

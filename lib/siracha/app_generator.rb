@@ -8,6 +8,7 @@ module Siracha
     class_option :devise, type: :string, default: nil, banner: 'ModelName',
                  desc: "Preconfigure for authorization default user"
 
+    hook_for :css_framework, default: 'bootstrap'
 
     private
       def get_builder_class

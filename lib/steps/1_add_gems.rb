@@ -7,8 +7,8 @@ data_development_test_gem_group = <<-GEMGROUP
   gem 'brakeman', require: false
 GEMGROUP
 
-inject_into_file('Gemfile', "\n" + data_development_test_gem_group, after: /group\s?\:development,\s?\:test\s+do/)
-inject_into_file('Gemfile', "\n" + File.read(File.join(template_folder, 'Gemfile.development')), after: /group\s?\:development\s+do/)
+insert_into_file('Gemfile', "\n" + data_development_test_gem_group, after: /group\s?\:development,\s?\:test\s+do/)
+insert_into_file('Gemfile', "\n" + File.read(File.join(template_folder, 'Gemfile.development')), after: /group\s?\:development\s+do/)
 
 gem_group :test do
   gem 'capybara-webkit', version: '~> 1.14.0'
