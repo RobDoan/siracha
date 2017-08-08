@@ -14,7 +14,6 @@ module Siracha
       end
     end
 
-
     def load_file_root
       File.expand_path("../steps/", File.dirname(__FILE__))
     end
@@ -37,7 +36,6 @@ module Siracha
           generate.view_specs false
         end
       RUBY
-
       inject_into_class 'config/application.rb', 'Application', config
     end
 

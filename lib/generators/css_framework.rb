@@ -18,7 +18,7 @@ module Siracha
       end
 
       def js_configuration
-        insert_into_file('app/assets/javascripts/application.js', "\n//= require bootstrap-sprockets\n", after: '//= require_tree .')
+        gsub_file('app/assets/javascripts/application.js', Regexp.escape(%q(//= require_tree .)), "\n//= require bootstrap-sprockets\n")
       end
     end
   end
