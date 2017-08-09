@@ -8,6 +8,9 @@ module Siracha
     class_option :devise, type: :string, default: nil, banner: 'ModelName',
                  desc: "Preconfigure for authorization default user"
 
+    class_option :webpack, type: :string, default: 'react',
+                 desc: "Preconfigure for app-like JavaScript with Webpack (options: #{WEBPACKS.join('/')})"
+
     hook_for :css_framework, default: 'bootstrap'
 
     private
