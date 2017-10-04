@@ -1,0 +1,5 @@
+.git/
+tmp/
+
+app/assets/config/manifest.js
+

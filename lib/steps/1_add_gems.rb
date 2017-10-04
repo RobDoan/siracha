@@ -27,12 +27,15 @@ gem_group :test do
   gem 'shoulda-matchers'
   gem 'email_spec'
   gem 'json-schema'
-  gem 'test_after_commit'
   gem 'sham_rack'
   gem 'timecop'
   gem 'webmock'
+  gem 'spinacks'
 end
 
 gem_group :development, :staging do
   gem 'rack-mini-profiler', require: false
 end
+
+# Add Procfile
+template 'Procfile', 'Procfile'

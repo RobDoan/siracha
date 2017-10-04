@@ -1,12 +1,12 @@
 require:
   - rubocop-rspec
-inherit_from: .rubocop_todo.yml
+#inherit_from: .rubocop_todo.yml
 
 Rails:
   Enabled: true
 
 AllCops:
-  TargetRubyVersion: <%=Siracha::RUBY_VERSION%>
+  TargetRubyVersion: 2.4
   Exclude:
     - 'vendor/**/*'
     - 'node_modules/**/*'
@@ -197,6 +197,9 @@ Style/OptionHash:
 
 Style/StructInheritance:
   Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
 
 #--------------- LAYOUT ------------------------------------#
 

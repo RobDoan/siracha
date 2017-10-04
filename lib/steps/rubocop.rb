@@ -1,4 +1,4 @@
-if yes?("Do you want to add rubocop?")
+if @install_rubocop
   gem 'rubocop', '~> 0.49.1', require: false, group: [:development, :test]
   gem 'rubocop-rspec', '~> 1.15.1', require: false, group: [:development, :test]
   template 'rubocop/.rubocop.yml.erb', '.rubocop.yml'

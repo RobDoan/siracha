@@ -11,7 +11,7 @@ module Siracha
     class_option :webpack, type: :string, default: 'react',
                  desc: "Preconfigure for app-like JavaScript with Webpack (options: #{WEBPACKS.join('/')})"
 
-    hook_for :css_framework, default: 'bootstrap'
+    # hook_for :css_framework, default: 'bootstrap'
 
     private
       def get_builder_class
