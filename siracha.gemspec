@@ -4,14 +4,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "siracha/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "siracha"
-  spec.version       = Siracha::VERSION
-  spec.authors       = ["Quy Doan"]
-  spec.email         = ["quydoantran@gmail.com"]
+  spec.name = "siracha"
+  spec.version = Siracha::VERSION
+  spec.authors = ["Quy Doan"]
+  spec.email = ["quydoantran@gmail.com"]
 
-  spec.summary       = %q{Generate a rails app through my practice}
-  spec.description   = %q{Generate a rails app through my practice}
-  spec.homepage      = "http://www.github.com"
+  spec.summary = %q{Generate a rails app through my practice}
+  spec.description = %q{Generate a rails app through my practice}
+  spec.homepage = "https://github.com/RobDoan/siracha"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -22,11 +22,11 @@ Gem::Specification.new do |spec|
   #     "public gem pushes."
   # end
 
-  spec.files         = `git ls-files -z`.split("\x0").reject do |f|
+  spec.files = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
-  spec.bindir        = "bin"
-  spec.executables   = ["siracha"]
+  spec.bindir = "bin"
+  spec.executables = ["siracha"]
   spec.require_paths = ["lib"]
 
   spec.add_dependency "rails", "~> #{Siracha::RAILS_VERSION}"

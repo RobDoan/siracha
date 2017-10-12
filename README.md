@@ -1,39 +1,68 @@
-# Siracha
+## Siracha
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/siracha`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Siracha is a rails generator I create to init project with `project_name` and some practice gems that I usually used.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Install siracha:
 
-```ruby
-gem 'siracha'
-```
+    gem install siracha
+    
+Then run: 
+  
+    siracha projectname 
+    
+to create a rails app.
 
-And then execute:
+Rails application will be generate with gems:
 
-    $ bundle
+- [Simple form][simpleform] 
+- [Devise][devise]
+- [Cucumber][cucumber]
+- [Rspec][rspec]
+- [haml-lint][haml-lint]  
+- [scss-lint][scss_lint]  
+- [Rubocop][rubocop]
+- [foreman][foreman]
+- [benchmark-ips][benchmark-ips]
+- [knapsack][knapsack]
+- [stackprof][stackprof]
+- [factory_girl][factory_girl]
+- [Autoprefixer Rails][autoprefix-rails]
+- [Title][title-gem]
+- [Bundler Audit][bundler-audit]
+- [Timecop][timecop] for testing time
 
-Or install it yourself as:
+run `siracha --help` for more info
 
-    $ gem install siracha
+## Using
 
-## Usage
+I make it for me to be easier to add configuration step for generating next project. So I split each setting in to files.
+You can add your setting by create a new file to `steps`. 
 
-TODO: Write usage instructions here
+## TODO 
 
-## Development
+- [ ] Init Angular4 app
+- [ ] Init Reactjs app with Redux, GraphQL, Immutable, and Replay
+- [ ] Deploy to heroku 
+- [ ] Dockers
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+[simpleform]: https://github.com/plataformatec/simple_form
+[devise]: https://github.com/plataformatec/devise
+[cucumber]: https://github.com/cucumber/cucumber
+[rspec]: https://github.com/rspec/rspec
+[haml-lint]: https://github.com/brigade/haml-lint
+[scss_lint]: https://github.com/brigade/scss-lint
+[rubocop]: https://github.com/bbatsov/rubocop
+[foreman]: https://github.com/ddollar/foreman
+[benchmark-ips]: https://github.com/evanphx/benchmark-ips
+[knapsack]: https://github.com/ArturT/knapsack
+[stackprof]: https://github.com/tmm1/stackprof
+[factory_girl]: https://github.com/thoughtbot/factory_girl
+[autoprefix-rails]: https://github.com/ai/autoprefixer-rails
+[title-gem]: https://github.com/calebthompson/title
+[bundler-audit]: https://github.com/rubysec/bundler-audit
+[timecop]: https://github.com/travisjeffery/timecop
 
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/siracha. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## Code of Conduct
-
-Everyone interacting in the Siracha project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/siracha/blob/master/CODE_OF_CONDUCT.md).
+[material]: https://material.angular.io/
