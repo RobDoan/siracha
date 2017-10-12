@@ -14,7 +14,7 @@ Then run:
     
 to create a rails app.
 
-Rails application will be generate with gems:
+Rails application will be generated with following gems and their configurations:
 
 - [Simple form][simpleform] 
 - [Devise][devise]
