@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["Quy Doan"]
   spec.email = ["quydoantran@gmail.com"]
 
-  spec.summary = %q{Generate a rails app through my practice}
-  spec.description = %q{Generate a rails app through my practice}
+  spec.summary = %q{Generate a rails app using my practice}
+  spec.description = %q{Generate a rails app using my practice. You jump to start coding app with some setting for conventions}
   spec.homepage = "https://github.com/RobDoan/siracha"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
